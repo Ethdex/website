@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto';
+}
+
+.robotoMono {
+    font-family: 'Roboto Mono';
+}
+
+#faq {
+    li {
+        padding-bottom: 5px;
+    }
+
+    a {
+        color: rgb(66, 66, 66);
+    }
+}
+
+
+#otc {
+    h1, h2, h3, h4 {
+        font-weight: 100;
+    }
+}
+
+#termsAndConditons {
+    ol {
+        padding-left: 13px;
+
+        li {
+            padding-bottom: 5px;
+        }
+    }
+}
+
+#documentation {
+    p {
+        line-height: 1.5;
+    }
+
+    .comment {
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+#termsAndConditons {
+    p {
+        margin-top: 0px;
+    }
+}
+
+a {
+    color: rgb(66, 66, 66);
+}
+
+/*
+ * Adds always visible scrollbars on OSX so that user knows the content is scrollable
+ * Source: https://davidwalsh.name/osx-overflow
+ */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+// Hack: For some reason the animation applied to the material-ui textfield causes the overflow
+// applied to other elements to fail while the animation is underway. Adding this class to the
+// affected component fixes the issue
+// Source: http://stackoverflow.com/questions/14383632/webkit-border-radius-and-overflow-bug-when-using-any-animation-transition
+.transitionFix {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.thin {
+    font-weight: 100;
+}
+
+code {
+    font-family: 'Roboto';
+    background-color: #f3f4f4;
+    color: rgb(36, 41, 46);
+    padding: 3px;
+
+    &.hljs {
+        background-color: #dde4e9 !important; // blue gray
+        border-left: 5px solid #0091EA !important; // colors.lightBlueA700
+        padding: 30px;
+    }
+}
