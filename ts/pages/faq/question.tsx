@@ -25,18 +25,19 @@ export class Question extends React.Component<QuestionProps, QuestionState> {
                 className="py1"
             >
                 <Card
+                    style={{backgroundColor: '#312450', border: '1px solid rgb(94, 66, 166)'}}
                     initiallyExpanded={this.props.shouldDisplayExpanded}
                     onExpandChange={this.onExchangeChange.bind(this)}
                 >
                     <CardHeader
                         title={this.props.prompt}
-                        style={{borderBottom: this.state.isExpanded ? '1px solid rgba(0, 0, 0, 0.19)' : 'none'}}
-                        titleStyle={{color: 'rgb(66, 66, 66)'}}
+                        style={{borderBottom: this.state.isExpanded ? '1px solid rgb(94, 66, 166)' : 'none'}}
+                        titleStyle={{color: '#d4d3d3'}}
                         actAsExpander={true}
                         showExpandableButton={true}
                     />
                     <CardText expandable={true}>
-                        <div style={{lineHeight: 1.4}}>
+                        <div style={{lineHeight: 1.4, color: '#d4d3d3'}}>
                             {this.props.answer}
                         </div>
                     </CardText>

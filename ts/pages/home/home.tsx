@@ -49,6 +49,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
                  <ul>
                    <li><Link to="/">Home</Link></li>
                    <li><Link to="/otc">OTC</Link></li>
+                   <li><Link to="/faq">FAQ</Link></li>
                  </ul>
                  </nav>
                </div>
@@ -60,9 +61,10 @@ export class Home extends React.Component<HomeProps, HomeState> {
 	        <div className="inner">
                 <h1 className="major">Ethdex</h1>
 
-                <p>Ethdex is a system which enables atomic exchange of Ethereum tokens.</p>
-                <p>We allow instant access to fluid and liquid token swaps.
-As Ether        eum grows, token accrual and exchange becomes an integral piece of the user lifecycle. Ethdex does not rely on any additional token to operate, we are 100% non-rent seeking.</p>
+                <p>Ethdex is an atomic on-chain exchange of Ethereum tokens.</p>
+                <p>
+          As Ethereum grows, specialised tokens are born and token exchange becomes an essential piece of the user lifecycle. Ethdex is here to help power the future.
+          We help each token become more <strong>liquid</strong> and our process is entirely <strong>fluid</strong>. No specialised fee tokens are needed to use Ethdex, we are <strong>100% non-rent seeking</strong>. </p>
                 <p>Ethdex is currently live on the Rostpen network. Check it out with the <Link to="/otc"> OTC DApp </Link> </p>
 	        <ul className="actions">
 	        <li><a href="#what" className="button scrolly">Learn more</a></li>
@@ -73,8 +75,10 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
 
              <section id="what" className="wrapper style3 fade-up">
                <div className="inner">
-               <h2>What is Ethdex?</h2>
-               <p>Ethdex is a protocol that enables the exchange of ERC20 tokens on-chain.</p>
+               <h2 className="major">Features</h2>
+               <p>
+                Ethdex can exchange your tokens safely and atomically, they only leave your wallet when the trade is complete.
+                No longer lose sleep at night, worrying that your tokens will be stolen from an Exchange.</p>
                <div className="features">
                <section>
                <span className="icon major fa-chain"></span>
@@ -84,17 +88,19 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                <section>
                <span className="icon major fa-diamond"></span>
                <h3>100% Non-Rent Seeking</h3>
-               <p>No specialised token is required for usage of the Ethdex protocol, simply Ether.</p>
+               <p>No specialised token is required to use the Ethdex system, simply Ether.</p>
+               <p>Ethdex takes no fees and provides the system for free.</p>
                </section>
                <section>
                <span className="icon major fa-cog"></span>
                <h3>Incentives</h3>
                <p>Releays can receive fees paid by makers and takers in Ether.</p>
+               <p>In the future, bad actors in the system will disincentivised.</p>
                </section>
                <section>
                <span className="icon major fa-desktop"></span>
                <h3>Works just like 0x Protocol</h3>
-               <p>The Ethdex protocol is compliant with the 0x Protocol.</p>
+               <p>The Ethdex system is compatible with the 0x Protocol.</p>
                </section>
                </div>
                </div>
