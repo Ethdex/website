@@ -66,13 +66,13 @@ export class Home extends React.Component<HomeProps, HomeState> {
 As Ether        eum grows, token accrual and exchange becomes an integral piece of the user lifecycle. Ethdex does not rely on any additional token to operate, we are 100% non-rent seeking.</p>
                 <p>Ethdex is currently live on the Rostpen network. Test it out with the <a href="/otc">OTC DApp</a>.</p>
 	        <ul className="actions">
-	        <li><a href="#two" className="button scrolly">Learn more</a></li>
-	        <li><a href="#three" className="button scrolly">Subscribe</a></li>
+	        <li><a href="#what" className="button scrolly">Learn more</a></li>
+	        <li><a href="#subscribe" className="button scrolly">Subscribe</a></li>
 	        </ul>
 	        </div>
 	      </section>
 
-             <section id="two" className="wrapper style3 fade-up">
+             <section id="what" className="wrapper style3 fade-up">
                <div className="inner">
                <h2>What is Ethdex?</h2>
                <p>Ethdex is a protocol that enables the exchange of ERC20 tokens on-chain.</p>
@@ -80,12 +80,12 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                <section>
                <span className="icon major fa-chain"></span>
                <h3>Token Swap</h3>
-               <p>Exchange your REP for your DNT, without the tokens ever leaving your control.</p>
+               <p>Exchange your REP for some DNT. Sleep easy as the tokens never leave your control.</p>
                </section>
                <section>
                <span className="icon major fa-diamond"></span>
                <h3>100% Non-Rent Seeking</h3>
-               <p>We do not require a specialised token for usage of the Ethdex protocol, simply Ether.</p>
+               <p>No specialised token is required for usage of the Ethdex protocol, simply Ether.</p>
                </section>
                <section>
                <span className="icon major fa-cog"></span>
@@ -101,12 +101,12 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                </div>
              </section>
 
-             <section id="three" className="wrapper style1-alt fade-up">
+             <section id="subscribe" className="wrapper style1-alt fade-up">
                <div className="inner">
                <h2>Stay tuned for details</h2>
                <div className="split style1">
                <section>
-               <form method="post" action="https://Etherdex.us16.list-manage.com/subscribe/post?u=313fdf79928335a66bdadd3bf&amp;id=6c3faf40d4">
+               <form method="post" action="//Etherdex.us16.list-manage.com/subscribe/post?u=313fdf79928335a66bdadd3bf&amp;id=6c3faf40d4">
                <div className="field ">
                <label>Email</label>
                <input type="text" name="EMAIL" id="email" />

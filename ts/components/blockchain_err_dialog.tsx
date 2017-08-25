@@ -45,7 +45,7 @@ export class BlockchainErrDialog extends React.Component<BlockchainErrDialogProp
     }
     private getTitle(hasWalletAddress: boolean) {
         if (this.props.blockchainErr === BlockchainErrs.A_CONTRACT_NOT_DEPLOYED_ON_NETWORK) {
-            return '0x smart contracts not found';
+            return 'Smart contracts not found';
         } else if (!hasWalletAddress) {
             return 'Enable wallet communication';
         } else if (this.props.blockchainErr === BlockchainErrs.DISCONNECTED_FROM_ETHEREUM_NODE) {
@@ -123,7 +123,7 @@ export class BlockchainErrDialog extends React.Component<BlockchainErrDialogProp
         return (
             <div>
                 <div>
-                    The 0x smart contracts are not deployed on the Ethereum network you are
+                    The smart contracts are not deployed on the Ethereum network you are
                     {' '}currently connected to (network Id: {this.props.blockchain.networkId}).
                     {' '}In order to use the OTC dApp,
                     {' '}please connect to the{' '}
