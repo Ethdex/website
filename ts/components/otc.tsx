@@ -32,6 +32,7 @@ import {OTCMenu} from 'ts/components/otc_menu';
 import {BlockchainErrDialog} from 'ts/components/blockchain_err_dialog';
 import * as BigNumber from 'bignumber.js';
 import {FlashMessage} from 'ts/components/ui/flash_message';
+import {TopBar} from 'ts/components/top_bar';
 
 const THROTTLE_TIMEOUT = 100;
 
@@ -147,6 +148,11 @@ export class OTC extends React.Component<OTCAllProps, OTCAllState> {
         return (
             <div style={otcStyle}>
                 <DocumentTitle title="OTC DApp"/>
+                 <TopBar
+                    userAddress={this.props.userAddress}
+                    blockchainIsLoaded={this.props.blockchainIsLoaded}
+                    location={this.props.location}
+                />
                 <div id="otc" className="mx-auto max-width-4 pt4" style={{width: '100%'}}>
                     <Paper className="mb3 mt2">
                         <div className="mx-auto flex">

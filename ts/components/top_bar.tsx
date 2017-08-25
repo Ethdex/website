@@ -75,23 +75,11 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
         return (
             <div style={styles.topBar} className="pb1">
                 <div className={parentClassNames}>
-                    <div className="col col-1">
-                        <div
-                            className="sm-pl2 md-pl2 lg-pl0"
-                            style={{fontSize: 25, color: 'black', cursor: 'pointer', paddingTop: 8}}
-                        >
-                            <i
-                                className="zmdi zmdi-menu"
-                                onClick={this.onMenuButtonClick.bind(this)}
-                            />
-                        </div>
-                    </div>
                     <div className="col col-8" />
                     <div className="col col-3">
                         {this.renderUser()}
                     </div>
                 </div>
-                {this.renderDrawer()}
             </div>
         );
     }

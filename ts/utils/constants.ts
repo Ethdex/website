@@ -2,6 +2,7 @@ import {ExchangeContractErrs, PublicNodeUrlsByNetworkId} from 'ts/types';
 import * as BigNumber from 'bignumber.js';
 
 const INFURA_API_KEY = '2dPrvhOye72HkOQfoX2T';
+//const INFURA_API_KEY = 'T5WSC8cautR4KXyYgsRs';
 
 export const constants = {
     STAGING_DOMAIN: '',
@@ -15,7 +16,6 @@ export const constants = {
     DEFAULT_DERIVATION_PATH: `44'/60'/0'`,
     ETHER_FAUCET_ENDPOINT: 'https://faucet.0xproject.com/rain',
     FEE_RECIPIENT_ADDRESS: '0x0000000000000000000000000000000000000000',
-  //FEE_RECIPIENT_ADDRESS: '0x00d41eBECB8fA875D2ae8416c2974CA588E47206',
     FIREFOX_U2F_ADDON: 'https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/',
     GITHUB_0X_JS_URL: 'https://github.com/0xProject/0x.js',
     LINKEDIN_0X_URL: 'https://www.linkedin.com/company/0x',
@@ -26,11 +26,9 @@ export const constants = {
     PUBLIC_NODE_URLS_BY_NETWORK_ID: {
         [1]: [
             `https://mainnet.infura.io/${INFURA_API_KEY}`,
-            'https://mainnet.0xproject.com',
             'https://api.myetherapi.com/eth',
         ],
         [42]: [
-            'https://kovan.0xproject.com',
             `https://kovan.infura.io/${INFURA_API_KEY}`,
         ],
     } as PublicNodeUrlsByNetworkId,
@@ -44,7 +42,7 @@ export const constants = {
     PARITY_CHROME_STORE_URL: 'https://chrome.google.com/webstore/detail/parity-ethereum-integrati/himekenlppkgeaoeddcliojfddemadig',
     MIST_DOWNLOAD_URL: 'https://github.com/ethereum/mist/releases',
     NULL_ADDRESS: '0x0000000000000000000000000000000000000000',
-    ROLLBAR_ACCESS_TOKEN: 'a6619002b51c4464928201e6ea94de65',
+    ROLLBAR_ACCESS_TOKEN: 'cc0fafe24a594975ad2c27442bd252f2',
     DOCS_SCROLL_DURATION_MS: 0,
     DOCS_CONTAINER_ID: 'documentation',
     HOME_SCROLL_DURATION_MS: 500,

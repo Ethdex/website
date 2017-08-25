@@ -16,8 +16,6 @@ import {Footer} from 'ts/components/footer';
 import {TopBar} from 'ts/components/top_bar';
 import {NewsletterInput} from 'ts/pages/home/newsletter_input';
 import {Statistics} from 'ts/pages/home/statistics';
-import {TeamAndAdvisors} from 'ts/pages/home/team_and_advisors';
-import {Partnerships} from 'ts/pages/home/partnerships';
 import ReactTooltip = require('react-tooltip');
 
 export interface HomeProps {
@@ -49,8 +47,8 @@ export class Home extends React.Component<HomeProps, HomeState> {
                <div className="inner">
                  <nav>
                  <ul>
-                   <li><a href="#intro">Home</a></li>
-                   <li><a href="/otc">OTC</a></li>
+                   <li><Link to="/">Home</Link></li>
+                   <li><Link to="/otc">OTC</Link></li>
                  </ul>
                  </nav>
                </div>
@@ -64,7 +62,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
                 <p>Ethdex is a system which enables atomic exchange of Ethereum tokens.</p>
                 <p>We allow instant access to fluid and liquid token swaps.
 As Ether        eum grows, token accrual and exchange becomes an integral piece of the user lifecycle. Ethdex does not rely on any additional token to operate, we are 100% non-rent seeking.</p>
-                <p>Ethdex is currently live on the Rostpen network. Test it out with the <a href="/otc">OTC DApp</a>.</p>
+                <p>Ethdex is currently live on the Rostpen network. Check it out with the <Link to="/otc"> OTC DApp </Link> </p>
 	        <ul className="actions">
 	        <li><a href="#what" className="button scrolly">Learn more</a></li>
 	        <li><a href="#subscribe" className="button scrolly">Subscribe</a></li>
@@ -106,13 +104,13 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                <h2>Stay tuned for details</h2>
                <div className="split style1">
                <section>
-               <form method="post" action="//Etherdex.us16.list-manage.com/subscribe/post?u=313fdf79928335a66bdadd3bf&amp;id=6c3faf40d4">
-               <div className="field ">
-               <label>Email</label>
-               <input type="text" name="EMAIL" id="email" />
+               <form action="//ethdex.us16.list-manage.com/subscribe/post?u=313fdf79928335a66bdadd3bf&amp;id=6c3faf40d4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" >
+               <div id="mc_embed_signup_scroll">
+                 <label>Email</label>
+                 <input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" />
                </div>
                <ul className="actions">
-               <li><a href="" className="button submit">Subscribe</a></li>
+                 <li><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button submit" /></li>
                </ul>
                </form>
                </section>
@@ -122,7 +120,7 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                <h3>Social</h3>
                <ul className="icons">
                <li><a href="#" className="fa-twitter"><span className="label">Twitter</span></a></li>
-               <li><a href="#" className="fa-github"><span className="label">GitHub</span></a></li>
+               <li><a href="https://github.com/Ethdex/contracts" className="fa-github"><span className="label">GitHub</span></a></li>
                </ul>
                </li>
                </ul>
@@ -130,8 +128,6 @@ As Ether        eum grows, token accrual and exchange becomes an integral piece 
                </div>
                </div>
              </section>
-
-
 
             </div>
             </div>

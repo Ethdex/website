@@ -132,7 +132,7 @@ export class TokenBalances extends React.Component<TokenBalancesProps, TokenBala
                                      you can request a loan from the Dharma Loan<br> \
                                      network.  Your loan should be funded in 5<br>  \
                                      minutes or less.';
-        const allowanceExplanation = '0x smart contracts require access to your<br> \
+        const allowanceExplanation = 'The smart contract requires access to your<br> \
                                   token balances in order to execute trades.<br> \
                                   Toggling permissions sets an allowance for the<br> \
                                   smart contract so you can start trading that token.';
@@ -142,9 +142,9 @@ export class TokenBalances extends React.Component<TokenBalancesProps, TokenBala
                 <Divider />
                 <div className="pt2 pb2">
                     {isTestNetwork ?
-                        'In order to try out the 0x OTC Dapp, request some test ether to pay for \
+                        'In order to try out the OTC Dapp, request some test ether to pay for \
                         gas costs. It might take a bit of time for the test ether to show up.' :
-                        'Ether must be converted to Ether Tokens in order to be tradable via 0x. \
+                        'Ether must be converted to Ether Tokens in order to be tradable. \
                          You can convert between Ether and Ether Tokens by clicking the "convert" button below.'
                     }
                 </div>
@@ -230,8 +230,8 @@ export class TokenBalances extends React.Component<TokenBalancesProps, TokenBala
                 <Divider />
                 <div className="pt2 pb2">
                     {isTestNetwork ?
-                        'Mint some test tokens you\'d like to use to generate or fill an order using 0x.' :
-                        'Tokens supported by OTC are pulled from the 0x token registry smart contract.'
+                        'Mint some test tokens you\'d like to use to generate or fill an order.' :
+                        'Tokens supported by OTC are pulled from the token registry smart contract.'
                     }
                 </div>
                 <Table

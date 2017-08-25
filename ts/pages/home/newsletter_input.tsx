@@ -98,8 +98,8 @@ export class NewsletterInput extends React.Component<NewsletterInputProps, Newsl
             return false;
         }
 
-        const endpoint = `${configs.BACKEND_BASE_URL}/newsletter_subscriber/${this.state.email}`;
-        const response = await fetch(endpoint);
+        const endpoint = "ethdex.us16.list-manage.com/subscribe/post?u=313fdf79928335a66bdadd3bf&amp;id=6c3faf40d4"
+        const response = await fetch(endpoint, { method: "POST" });
         const responseText = await response.text();
         if (response.status === 200) {
             this.setState({
