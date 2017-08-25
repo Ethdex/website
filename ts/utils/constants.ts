@@ -1,12 +1,12 @@
 import {ExchangeContractErrs, PublicNodeUrlsByNetworkId} from 'ts/types';
 import * as BigNumber from 'bignumber.js';
 
-const INFURA_API_KEY = 'T5WSC8cautR4KXyYgsRs';
+const INFURA_API_KEY = '2dPrvhOye72HkOQfoX2T';
 
 export const constants = {
-    STAGING_DOMAIN: 'staging-0xproject.s3-website-us-east-1.amazonaws.com',
+    STAGING_DOMAIN: '',
     PRODUCTION_DOMAIN: 'ethdex.io',
-    DEVELOPMENT_DOMAIN: '0xproject.dev:3572',
+    DEVELOPMENT_DOMAIN: 'ethdex.dev:3572',
     BIGNUMBERJS_GITHUB_URL: 'http://mikemcl.github.io/bignumber.js',
     BITLY_ACCESS_TOKEN: 'ffc4c1a31e5143848fb7c523b39f91b9b213d208',
     BITLY_ENDPOINT: 'https://api-ssl.bitly.com',
@@ -14,8 +14,8 @@ export const constants = {
     DEFAULT_TOKEN_ICON_URL: '/images/token_icons/default.png',
     DEFAULT_DERIVATION_PATH: `44'/60'/0'`,
     ETHER_FAUCET_ENDPOINT: 'https://faucet.0xproject.com/rain',
-  //FEE_RECIPIENT_ADDRESS: '0x0000000000000000000000000000000000000000',
-    FEE_RECIPIENT_ADDRESS: '0x00d41eBECB8fA875D2ae8416c2974CA588E47206',
+    FEE_RECIPIENT_ADDRESS: '0x0000000000000000000000000000000000000000',
+  //FEE_RECIPIENT_ADDRESS: '0x00d41eBECB8fA875D2ae8416c2974CA588E47206',
     FIREFOX_U2F_ADDON: 'https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/',
     GITHUB_0X_JS_URL: 'https://github.com/0xProject/0x.js',
     LINKEDIN_0X_URL: 'https://www.linkedin.com/company/0x',

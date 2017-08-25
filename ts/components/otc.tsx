@@ -26,7 +26,6 @@ import {
     ScreenWidths,
     Token,
 } from 'ts/types';
-import {TopBar} from 'ts/components/top_bar';
 import {Footer} from 'ts/components/footer';
 import {Loading} from 'ts/components/ui/loading';
 import {OTCMenu} from 'ts/components/otc_menu';
@@ -148,11 +147,6 @@ export class OTC extends React.Component<OTCAllProps, OTCAllState> {
         return (
             <div style={otcStyle}>
                 <DocumentTitle title="OTC DApp"/>
-                <TopBar
-                    userAddress={this.props.userAddress}
-                    blockchainIsLoaded={this.props.blockchainIsLoaded}
-                    location={this.props.location}
-                />
                 <div id="otc" className="mx-auto max-width-4 pt4" style={{width: '100%'}}>
                     <Paper className="mb3 mt2">
                         <div className="mx-auto flex">

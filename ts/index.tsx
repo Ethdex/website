@@ -88,9 +88,7 @@ render(
                         <Switch>
                             <Route exact={true} path="/" component={Home as any} />
                             <Route path="/otc" component={LazyOTC} />
-                            <Route path="/token" component={TokenLaunch as any} />
                             <Route path="/faq" component={FAQ as any} />
-                            <Route path="/docs/0xjs/:version?" component={LazyZeroExJSDocumentation} />
                             <Route component={NotFound as any} />
                         </Switch>
                     </div>
