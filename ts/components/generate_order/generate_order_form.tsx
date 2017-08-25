@@ -70,6 +70,10 @@ const style = {
     },
 };
 
+const titleStyle = {
+  color: "#424242"
+}
+
 export class GenerateOrderForm extends React.Component<GenerateOrderFormProps, any> {
     private validator: SchemaValidator;
     constructor(props: GenerateOrderFormProps) {
@@ -96,7 +100,7 @@ export class GenerateOrderForm extends React.Component<GenerateOrderFormProps, a
         const exchangeContractIfExists = this.props.blockchain.getExchangeContractAddressIfExists();
         return (
             <div className="clearfix mb2 lg-px4 md-px4 sm-px2">
-                <h3>Generate an order</h3>
+                <h3 style={{titleStyle}}>New order</h3>
                 <Divider />
                 <div className="mx-auto" style={{maxWidth: 580}}>
                     <div className="pt3">

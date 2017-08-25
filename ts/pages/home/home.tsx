@@ -58,7 +58,8 @@ export class Home extends React.Component<HomeProps, HomeState> {
 
 	      <section className="wrapper style1-alt fullscreen fade-up">
 	        <div className="inner">
-	        <h1>Ethdex</h1>
+                <h1 className="major">Ethdex</h1>
+
                 <p>Ethdex is a system which enables atomic exchange of Ethereum tokens.</p>
                 <p>We allow instant access to fluid and liquid token swaps.
 As Ether        eum grows, token accrual and exchange becomes an integral piece of the user lifecycle. Ethdex does not rely on any additional token to operate, we are 100% non-rent seeking.</p>

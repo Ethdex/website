@@ -18,7 +18,8 @@ import {
 import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 
-const SECTION_HEADER_COLOR = 'rgb(234, 234, 234)';
+//const SECTION_HEADER_COLOR = 'rgb(234, 234, 234)';
+const SECTION_HEADER_COLOR = 'rgb(94, 66, 166)';
 
 interface TopBarProps {
     userAddress?: string;
@@ -41,7 +42,8 @@ const styles: Styles = {
         paddingTop: 4,
         textOverflow: 'ellipsis',
         whiteSpace: 'nowrap',
-        width: 70,
+        width: 90,
+        color: "#fffff"
     },
     addressPopover: {
         backgroundColor: colors.blueGrey500,
@@ -49,7 +51,7 @@ const styles: Styles = {
         padding: 3,
     },
     topBar: {
-        backgroundColor: 'white',
+        backgroundColor: SECTION_HEADER_COLOR,
         height: 42,
         width: '100%',
         position: 'fixed',
@@ -75,7 +77,8 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
         return (
             <div style={styles.topBar} className="pb1">
                 <div className={parentClassNames}>
-                    <div className="col col-8" />
+                    <div className="col col-8">
+                    </div>
                     <div className="col col-3">
                         {this.renderUser()}
                     </div>
@@ -188,7 +191,7 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
                 >
                     {!_.isEmpty(userAddress) ? userAddress : ''}
                 </div>
-                <ReactTooltip id="userAddressTooltip">{userAddress}</ReactTooltip>
+                <ReactTooltip type="dark" id="userAddressTooltip">{userAddress}</ReactTooltip>
                 <div>
                     <Identicon address={userAddress} diameter={identiconDiameter} />
                 </div>

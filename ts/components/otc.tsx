@@ -158,7 +158,7 @@ export class OTC extends React.Component<OTCAllProps, OTCAllState> {
                         <div className="mx-auto flex">
                             <div
                                 className="col col-2 pr2 pt1 sm-hide xs-hide"
-                                style={{overflow: 'hidden', backgroundColor: 'rgb(39, 39, 39)', color: 'white'}}
+                                style={{overflow: 'hidden', backgroundColor: 'rgb(75, 51, 130)', color: 'white'}}
                             >
                                 <OTCMenu menuItemStyle={{color: 'white'}} />
                             </div>

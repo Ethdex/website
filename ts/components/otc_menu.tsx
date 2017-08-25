@@ -23,7 +23,7 @@ export class OTCMenu extends React.Component<OTCMenuProps, OTCMenuState> {
                     to="/otc"
                     onClick={this.props.onClick.bind(this)}
                 >
-                    {this.renderMenuItemWithIcon('Generate order', 'zmdi-arrow-right-top')}
+                    {this.renderMenuItemWithIcon('New Order', 'zmdi-file-plus')}
                 </MenuItem>
                 <MenuItem
                     style={this.props.menuItemStyle}
@@ -31,7 +31,7 @@ export class OTCMenu extends React.Component<OTCMenuProps, OTCMenuState> {
                     to="/otc/fill"
                     onClick={this.props.onClick.bind(this)}
                 >
-                    {this.renderMenuItemWithIcon('Fill order', 'zmdi-arrow-left-bottom')}
+                    {this.renderMenuItemWithIcon('Fill Order', 'zmdi-ticket-star')}
                 </MenuItem>
                 <MenuItem
                     style={this.props.menuItemStyle}
@@ -39,7 +39,7 @@ export class OTCMenu extends React.Component<OTCMenuProps, OTCMenuState> {
                     to="/otc/balances"
                     onClick={this.props.onClick.bind(this)}
                 >
-                    {this.renderMenuItemWithIcon('Balances', 'zmdi-balance-wallet')}
+                    {this.renderMenuItemWithIcon('Balances', 'zmdi-money-box')}
                 </MenuItem>
                 <MenuItem
                     style={this.props.menuItemStyle}
@@ -47,7 +47,7 @@ export class OTCMenu extends React.Component<OTCMenuProps, OTCMenuState> {
                     to="/otc/trades"
                     onClick={this.props.onClick.bind(this)}
                 >
-                    {this.renderMenuItemWithIcon('Trade history', 'zmdi-format-list-bulleted')}
+                    {this.renderMenuItemWithIcon('Trade history', 'zmdi-receipt')}
                 </MenuItem>
             </div>
         );

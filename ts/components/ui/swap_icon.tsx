@@ -20,7 +20,7 @@ export class SwapIcon extends React.Component<SwapIconProps, SwapIconState> {
     }
     public render() {
         const swapStyles = {
-            color: this.state.isHovering ? colors.amber600 : colors.amber800,
+            color: this.state.isHovering ? colors.purple300 : colors.purple800,
             fontSize: 50,
         };
         return (
