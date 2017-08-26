@@ -59,12 +59,11 @@ export class Home extends React.Component<HomeProps, HomeState> {
 
 	      <section className="wrapper style1-alt fullscreen fade-up">
 	        <div className="inner">
-                <h1 className="major">Ethdex</h1>
+                <h1 className="major thin">Ethdex</h1>
 
                 <p>Ethdex is an atomic on-chain exchange of Ethereum tokens.</p>
-                <p>
-          As Ethereum grows, specialised tokens are born and token exchange becomes an essential piece of the user lifecycle. Ethdex is here to help power the future.
-          We help each token become more <strong>liquid</strong> and our process is entirely <strong>fluid</strong>. No specialised fee tokens are needed to use Ethdex, we are <strong>100% non-rent seeking</strong>. </p>
+                <p>As Ethereum grows, specialised tokens are born and token exchange becomes an essential piece of the user lifecycle. Ethdex is here to help power the future.
+          We help each token become more <strong className="thin">liquid</strong> and our process is entirely <strong className="thin">fluid</strong>. No specialised fee tokens are needed to use Ethdex, we are <strong className="thin">100% non-rent seeking</strong>. </p>
                 <p>Ethdex is currently live on the Rostpen network. Check it out with the <Link to="/otc"> OTC DApp </Link> </p>
 	        <ul className="actions">
 	        <li><a href="#what" className="button scrolly">Learn more</a></li>
@@ -75,7 +74,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
 
              <section id="what" className="wrapper style3 fade-up">
                <div className="inner">
-               <h2 className="major">Features</h2>
+               <h2 className="major thin">Features</h2>
                <p>
                 Ethdex can exchange your tokens safely and atomically, they only leave your wallet when the trade is complete.
                 No longer lose sleep at night, worrying that your tokens will be stolen from an Exchange.</p>
