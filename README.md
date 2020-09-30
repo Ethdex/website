@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-### Local Dev Setup
+### Local Developer Setup
 
 Requires Node version 6.9.5 or higher.
 
@@ -26,7 +26,7 @@ Import smart contract artifacts from `contracts` repo:
 yarn run update_contracts
 ```
 
-Start dev server:
+Starting dev server:
 
 ```
 yarn run dev
